@@ -2,53 +2,33 @@
  * {
      font-family: 'Poppins', sans-serif;
  }
-/*
-body{
-    background-image: url(yannis-papanastasopoulos-386381-unsplash.jpg);
-    background-size: cover;
-}
+ /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
  
-*/
- form {
-     z-index: 5;
-     margin-top: 10%;
-     width: 40%;
+ #map {
+     flex: 5;
+ }
+ /* Optional: Makes the sample page fill the window. */
+ 
+ html,
+ body {
+     height: 100%;
+     margin: 0;
+     padding: 0;
      display: flex;
      flex-direction: column;
-     margin-left: auto;
-     margin-right: auto;
  }
  
- form input {
-     border: none;
-     height: 30px;
-     margin-bottom: 30px;
-     border: 1px solid gray;
-     border-radius: 2px;
+ #floating-panel {
+     flex: 1;
+     top: 10px;
+     left: 25%;
+     z-index: 5;
+     background-color: #fff;
+     padding: 5px;
+     border: 1px solid #999;
+     text-align: center;
+     font-family: 'Roboto', 'sans-serif';
+     line-height: 30px;
+     padding-left: 10px;
  }
- 
- #send {
-     border: none;
-     color: white;
-     padding: 20px 20px 20px 20px;
-     background-color: rebeccapurple;
-     padding-bottom: 10px;
-     padding-top: 10px;
-     height: auto;
-     font-size: 20px;
-     border-radius: 2px;
- }
-#overlay{
-    width: 800px;
-    height: 500px;
-    background-color: white;
-    position: absolute;
-    opacity: .5;
-    top:120px;
-    left: 320px;
-    z-index: -1
-}
-
-      #map {
-        height: 100%;
-      }
