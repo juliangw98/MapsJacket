@@ -123,6 +123,10 @@
           }
         });
       };
+       fetch('https://maps.googleapis.com/maps/api/directions/json?origin=Zoetermeer&destination=Gouda&avoid=highways&mode=bicycling&key=AIzaSyDxA82FXbjKeM1gSHFYOv9rcoAYZ8ydMbw')
+            .then(response => response.json())
+            .then(json => console.log(json));
+        
         
         
 
